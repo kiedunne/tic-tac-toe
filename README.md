@@ -22,6 +22,12 @@ Tests are run with Jasmine. Code coverage is 100% with Codecov
 open SpecRunner.html in any browser
 ```
 
+### Linting
+
+Run ESLint linter as a pretest:
+```
+npm run pretest
+```
 ## Specifications
 
 The rules of tic-tac-toe are as follows:
@@ -34,4 +40,4 @@ The rules of tic-tac-toe are as follows:
 * A game is over if a player wins
 * A game is over when all fields are taken
 
-Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line. 
+Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line.
