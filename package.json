@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "tic-tac-toe game",
+  "main": "index.js",
+  "scripts": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiedunne/tic-tac-toe.git"
+  },
+  "author": "kie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiedunne/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/kiedunne/tic-tac-toe#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "jasmine": "^3.3.1",
+    "webpack": "^4.28.4"
+  }
+}
