@@ -21,7 +21,7 @@ describe("Grid", function() {
         }).toThrowError('Spot taken!');
     });
 
-    it('cannot place an X at if it already has a symbol', function() {
+    it('cannot enter a non-number', function() {
         expect(function() {
           grid.move("1");
         }).toThrowError('Must be a number.');

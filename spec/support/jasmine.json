@@ -1,10 +1,12 @@
 {
-  "spec_dir": "spec",
+  "spec_dir": "test",
   "spec_files": [
-    "**/*[sS]pec.js"
+    "**/*[sS]pec.js",
+    "/Users/jacklyndunne/Documents/GitHub/tic-tac-toe/src/grid.js"
   ],
   "helpers": [
     "helpers/**/*.js"
+
   ],
   "stopSpecOnExpectationFailure": false,
   "random": true

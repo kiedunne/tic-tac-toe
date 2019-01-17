@@ -1,33 +1,37 @@
 {
   "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "tic-tac-toe game",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "webpack": "^4.28.4"
+  },
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "jasmine": "^3.3.1"
+  },
   "scripts": {
-  "start": "node index.js",
-  "test": "mocha"
-}
+    "test": "tests"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kiedunne/tic-tac-toe.git"
   },
-  "author": "kie",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kiedunne/tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/kiedunne/tic-tac-toe#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
-    "eslint": "^5.12.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "jasmine": "^3.3.1",
-    "webpack": "^4.28.4"
-  }
+  "homepage": "https://github.com/kiedunne/tic-tac-toe#readme"
 }

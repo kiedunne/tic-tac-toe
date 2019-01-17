@@ -1,6 +1,12 @@
-language: node_js
-node_js:
-  - "stable"
+language:
+  node_js
+install:
+  - npm install -g codecov
+script:
+  - istanbul cover ./node_modules/jasmine/bin/jasmine.js
+  - codecov
 cache:
   directories:
     - "node_modules"
+env:
+  - CODECOV_TOKEN="477499b0-7571-4a75-ac7b-2abaaa3a4074"
