@@ -1,5 +1,5 @@
 # Tic Tac Toe Tech Test
-=======================
+
 [![Build Status](https://travis-ci.org/kiedunne/tic-tac-toe.svg?branch=master)](https://travis-ci.org/kiedunne/tic-tac-toe)
 [![codecov](https://codecov.io/gh/kiedunne/tic-tac-toe/branch/master/graph/badge.svg)](https://codecov.io/gh/kiedunne/tic-tac-toe)
 
@@ -12,9 +12,8 @@
 ```
 git clone https://github.com/kiedunne/tic-tac-toe
 cd tic-tac-toe
+open SpecRunner.html in any browser
 ```
-
-Open index.html in any web browser
 
 ### Testing
 
