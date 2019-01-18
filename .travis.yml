@@ -7,6 +7,7 @@ install:
 script:
   - istanbul cover ./node_modules/jasmine/bin/jasmine.js
   - codecov
+  - jasmine
 cache:
   directories:
     - "node_modules"

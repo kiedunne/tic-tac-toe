@@ -1,34 +1,28 @@
+'use strict'
+
 describe('Player', function () {
-  beforeEach(function () {
-    player = new Player()
-  })
+  var player
 
-  describe('can place moves on the grid', function () {
-    it('greates a new grid with 9 empty spaces', function () {
-      expect(player.grid.length).toEqual(9)
-    })
+  beforeEach(function() {
+    player = new Player();
+  });
+  describe('Placing symbol on grid', function () {
+    it('can place X at a position on the grid', function () {
+      player.move(0, 0)
+      expect(player.grid).toEqual([['X', '', ''], ['', '', ''], ['', '', '']])
+    });
 
-    it('can place an X at a position', function () {
-      player.move(1)
-      expect(player.grid).toEqual(['', 'X', '', '', '', '', '', '', ''])
-    })
-
-    it('cannot place an X at if it already has a symbol', function () {
-      player.move(1)
+    it('cannot place a symbol if already full', function () {
+      player.move(0, 0)
       expect(function () {
-        player.move(1)
+        player.move(0, 0)
       }).toThrowError('Spot taken!')
-    })
+    });
 
     it('cannot enter a non-number', function () {
       expect(function () {
-        player.move('1')
-      }).toThrowError('Must be a number.')
+        player.move('0', '0')
+      }).toThrowError('Row and column must be be a number!')
     });
-
-    it('can change the players turn', function () {
-      player.switchTurn()
-      expect(player.newTurn).toEqual('O')
-    })
   });
 });

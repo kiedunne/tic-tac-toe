@@ -1,13 +1,14 @@
 {
   "spec_dir": "test",
   "spec_files": [
-    "**/*[sS]pec.js",
-    "/Users/jacklyndunne/Documents/GitHub/tic-tac-toe/src/grid.js"
+    "/Users/jacklyndunne/Documents/GitHub/tic-tac-toe/src/game.js",
+    "/Users/jacklyndunne/Documents/GitHub/tic-tac-toe/src/player.js",
+    "/Users/jacklyndunne/Documents/GitHub/tic-tac-toe/test/game_spec.js",
+    "/Users/jacklyndunne/Documents/GitHub/tic-tac-toe/test/player_spec.js"
   ],
   "helpers": [
     "helpers/**/*.js"
-
   ],
   "stopSpecOnExpectationFailure": false,
-  "random": true
+  "random": false
 }

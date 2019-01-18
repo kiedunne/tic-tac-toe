@@ -12,8 +12,10 @@ Game.prototype.switchTurn = function () {
   this.turn = this.turn[0]
 };
 
-Game.prototype.checkLose = function () {
-  if (this.grid.includes('') == false) {
+Game.prototype.checkStatus = function (grid) {
+  if (grid.every(x => x[0] === 'X')) {
+    this.gameStatus = 'Winner!'
+  } else if (grid.flat().includes('') === false) {
     this.gameStatus = 'Draw'
   };
 };
