@@ -12,6 +12,11 @@ Player.prototype.move = function (row, column) {
     throw new Error('Row and column must be be a number!')
   } else {
     this.grid[row][column] = this.turn
+    // switchTurn()
   };
-  console.log(this.grid)
-}
+};
+
+Player.prototype.switchTurn = function () {
+  this.turn = this.symbols.filter((x) => { return x !== this.turn })
+  this.turn = this.turn[0]
+};
