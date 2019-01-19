@@ -24,10 +24,16 @@ open SpecRunner.html in any browser
 
 ### Linting
 
-Run ESLint linter as a pretest:
+Run ESLint as a pretest:
 ```
 npm run pretest
 ```
+Run ESLint on each file:
+```
+./node_modules/.bin/eslint ./src/*.js
+./node_modules/.bin/eslint ./test/*.js
+```
+
 ## Specifications
 
 The rules of tic-tac-toe are as follows:
