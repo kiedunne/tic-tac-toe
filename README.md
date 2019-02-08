@@ -6,6 +6,7 @@
 ### Technology
 
 * Javascript
+* Jasmine
 
 ### Setup
 
@@ -13,6 +14,22 @@
 git clone https://github.com/kiedunne/tic-tac-toe
 cd tic-tac-toe
 open SpecRunner.html in any browser
+```
+
+### Instructions
+Open index.html in any browse and open the console to play the game
+
+### Typical Game
+```
+game = new Game()
+game.move(0,2)
+  0: (3) ["_", "_", "X"]
+  1: (3) ["_", "_", "_"]
+  2: (3) ["_", "_", "_"]
+game.move(0,1)  
+  0: (3) ["_", "O", "X"]
+  1: (3) ["_", "_", "_"]
+  2: (3) ["_", "_", "_"]
 ```
 
 ### Testing
