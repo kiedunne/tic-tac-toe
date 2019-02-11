@@ -68,7 +68,7 @@ describe('Status', () => {
     ['_', 'X', '_']]
     status.check(gridwin)
     expect(status.msg).toEqual('Horizontal Winner!')
-    });
+  });
 
   it('can identify a row 2 horizontal winning game', function () {
     const gridwin =
@@ -77,7 +77,24 @@ describe('Status', () => {
      ['X', 'X', 'X']]
     status.check(gridwin)
     expect(status.msg).toEqual('Horizontal Winner!')
-    });
+  });
 
+  it('can identify a left diagonal winning game', function () {
+    const gridwin =
+    [['_', 'O', 'X'],
+     ['_', 'X', 'O'],
+     ['X', '_', '_']]
+    status.check(gridwin)
+    expect(status.msg).toEqual('Diagonal Winner!')
+  });
+
+  it('can identify a row right diagonal winning game', function () {
+    const gridwin =
+    [['O', '_', 'X'],
+     ['_', 'O', 'X'],
+     ['_', '_', 'O']]
+    status.check(gridwin)
+    expect(status.msg).toEqual('Diagonal Winner!')
+    });
   });
 });
