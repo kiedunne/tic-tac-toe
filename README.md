@@ -17,7 +17,7 @@ open SpecRunner.html in any browser
 ```
 
 ### Instructions
-Open index.html in any browse and open the console to play the game
+Open index.html in any browser and open the console to play the game
 
 ### Typical Game
 ```
