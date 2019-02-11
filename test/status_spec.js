@@ -52,5 +52,32 @@ describe('Status', () => {
     expect(status.msg).toEqual('Vertical Winner!');
   });
 
+  it('can identify a row 1 horizontal winning game', function () {
+    const gridwin =
+    [['X', 'X', 'X'],
+     ['O', '_', '_'],
+     ['_', 'O', '_']]
+    status.check(gridwin)
+    expect(status.msg).toEqual('Horizontal Winner!')
+  });
+
+  it('can identify a row 2 horizontal winning game', function () {
+    const gridwin =
+    [['_', 'X', '_'],
+     ['O', 'O', 'O'],
+    ['_', 'X', '_']]
+    status.check(gridwin)
+    expect(status.msg).toEqual('Horizontal Winner!')
+    });
+
+  it('can identify a row 2 horizontal winning game', function () {
+    const gridwin =
+    [['_', 'O', '_'],
+     ['_', '_', 'O'],
+     ['X', 'X', 'X']]
+    status.check(gridwin)
+    expect(status.msg).toEqual('Horizontal Winner!')
+    });
+
   });
 });
