@@ -40,5 +40,14 @@ describe('Game', () => {
       game._changeTurn();
       expect(game.turn.symbol).toEqual('X');
     });
+
+    it('clears grid after a win', () => {
+      game.move(0,0);
+      game.move(0,1);
+      game.move(1,1);
+      game.move(2,1);
+      game.move(2,2);
+      expect(game.grid).toEqual([['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']]);
+    });
   });
 });
