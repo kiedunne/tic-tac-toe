@@ -11,8 +11,7 @@ Status.prototype.check = function (grid) {
     this.msg = 'Horizontal Winner!';
   } else if (this._diagonalWin(grid) === true) {
     this.msg = 'Diagonal Winner!';
-  }
-  else {
+  } else {
     this.msg = 'Next player turn!';
   }
 };

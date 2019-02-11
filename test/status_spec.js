@@ -24,7 +24,7 @@ describe('Status', () => {
     status.check(gridcontinue);
     expect(status.msg).toEqual('Next player turn!');
   });
-//
+
   it('can identify a column 1 vertical winning game', () => {
     const gridwin =
      [['X', 'O', '_'],

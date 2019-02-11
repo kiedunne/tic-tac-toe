@@ -31,11 +31,13 @@ Game.prototype._changeTurn = function () {
 };
 
 Game.prototype._checkGameStatus = function () {
-  if (this.gameStatus.check(this.grid) === 'Draw') {
-    console.log('Draw')
-  } else if (this.gameStatus.check(this.grid) === 'Next player turn!') {
-    console.log('Next player turn!')
+  this.gameStatus.check(this.grid)
+  console.log(this.gameStatus.msg)
+  if (this.gameStatus.msg === 'Diagonal Winner!' || this.gameStatus.msg === 'Horizontal Winner!' || this.gameStatus.msg === 'Vertical Winner!') {
+    this._wipeBoard();
   }
 };
 
-// (grid.every(obj => obj[0] === obj[0]) || grid.every(obj => obj[1] === obj[1]) || grid.every(obj => obj[2] === obj[2])))
+Game.prototype._wipeBoard = function () {
+  this.grid = [['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']]
+};
