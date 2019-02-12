@@ -1,5 +1,4 @@
 
-
 describe('Game', () => {
   let game;
 
@@ -48,6 +47,16 @@ describe('Game', () => {
       game.move(2,1);
       game.move(2,2);
       expect(game.grid).toEqual([['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']]);
+    });
+
+    it('gives a point to a winning player', () => {
+      game.move(0,0);
+      game.move(0,1);
+      game.move(1,1);
+      game.move(2,1);
+      game.move(2,2);
+      game.move(2,0);
+      expect(game.turn.wins).toEqual(1);
     });
   });
 });
