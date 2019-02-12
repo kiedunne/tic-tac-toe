@@ -1,8 +1,5 @@
 # Tic Tac Toe Tech Test
 
-[![Build Status](https://travis-ci.org/kiedunne/tic-tac-toe.svg?branch=master)](https://travis-ci.org/kiedunne/tic-tac-toe)
-[![codecov](https://codecov.io/gh/kiedunne/tic-tac-toe/branch/master/graph/badge.svg)](https://codecov.io/gh/kiedunne/tic-tac-toe)
-
 ### Technology
 
 * Javascript
@@ -41,9 +38,10 @@ open SpecRunner.html in any browser
 
 ### Linting
 
-Run ESLint as a pretest:
+Run ESLint on source and test files:
 ```
-npm run pretest
+npm run lint
+npm run linttest
 ```
 Run ESLint on each file:
 ```
